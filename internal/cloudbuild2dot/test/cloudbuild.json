@@ -1,0 +1,19 @@
+{
+  "steps": [
+  {
+      "name": "ubuntu",
+      "args": [
+          "sleep",
+          "600"
+      ],
+      "timeout": "500s"
+  },
+  {
+      "name": "ubuntu",
+      "args": [
+          "echo",
+          "hello world, after 600s"
+      ]
+  }
+  ]
+}
