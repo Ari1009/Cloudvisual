@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "config:base",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "automerge": true,
+  "dependencyDashboard": false,
+  "major": {
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "ubuntu"
+      ],
+      "versioning": "regex:^(?<compatibility>[a-z]+)-?(?<minor>\\d+)?$"
+    }
+  ],
+  "postUpdateOptions": [
+    "gomodTidy"
+  ]
+}
