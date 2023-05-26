@@ -7,6 +7,8 @@ Get a structured view of your Google cloud build
 ## Prerequisite
 Have your google cloud build configuration file in your current working directory more info on https://cloud.google.com/build/docs/build-config-file-schema#json_7
 
+extension can be .json, .yaml or .yml
+
 ## Usage
 Running Cloudvisual creates an cloudbuild.pdf file containg a visual graph of your cloud build.
 
